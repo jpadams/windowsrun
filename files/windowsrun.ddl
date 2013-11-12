@@ -9,13 +9,13 @@ metadata :name        => "windowsrun",
 action "run", :description => "Runs a command windows" do
   display :always
 
-  input :script,
-        :prompt      => "command name",
-        :description => "Name and full path of the script we want to run",
-        :type        => :string,
-	:validation  => '^.+$',
-        :optional    => false,
-        :maxlength   => 255
+#  input :script,
+#        :prompt      => "command name",
+#        :description => "Name and full path of the script we want to run",
+#        :type        => :string,
+#	:validation  => '^.+$',
+#        :optional    => false,
+#        :maxlength   => 255
  
   output :status,
          :description => "The exit code of the script",
