@@ -4,10 +4,10 @@ module MCollective
     #test of windows run
       action "run" do
 
-        command = request[:script]
+        #command = request[:script]
 
 
-	reply[:status] = run(command,:stdout => :out, :stderr => :err, :chomp => true)
+	reply[:status] = run("dir",:stdout => :out, :stderr => :err, :chomp => true)
       end
 
     end
