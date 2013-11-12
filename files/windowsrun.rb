@@ -7,7 +7,7 @@ module MCollective
         #command = request[:script]
 
 
-	reply[:status] = run("dir",:stdout => :out, :stderr => :err, :chomp => true)
+	reply[:status] = "hello, sweeny"
       end
 
     end
